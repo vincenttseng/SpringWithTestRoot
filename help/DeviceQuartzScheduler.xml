@@ -1,0 +1,15 @@
+<service> 
+    <id>III_DQS</id>
+    <name>III_DeviceQuartzScheduler</name>
+    <description>III_DeviceQuartzScheduler</description>
+    <env name="MYAPP_HOME" value="%BASE%"/>
+    <executable>java</executable>
+    <arguments>-Dspring.config.location=setting/ -Dspring.profiles.active=local -Dlogging.config=setting/log4j2.properties -Dfile.encoding=UTF8 -jar "%BASE%\DeviceQuartzScheduler.jar"</arguments>
+    <logmode>none</logmode>
+	<delayedAutoStart/>
+	<!--<depend>postgresql-x64-11</depend>-->
+	<onfailure action="restart" delay="5 min"/>
+    <onfailure action="restart" delay="5 min"/>
+    <onfailure action="restart" delay="5 min" />
+	<resetfailure>1 day</resetfailure>
+</service> 

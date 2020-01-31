@@ -1,0 +1,9 @@
+<service> 
+    <id>kafka zookeeper service</id>
+    <name>kafka zookeeper service</name>
+    <description>This runs kafka service.</description>
+    <env name="MYAPP_HOME" value="%BASE%"/>
+    <executable>C:/apps/kafka_2.12-2.3.0/bin/windows/zookeeper-server-start.bat</executable>
+    <arguments>C:/apps/kafka_2.12-2.3.0/config/zookeeper.properties</arguments>
+    <logmode>none</logmode>
+</service> 

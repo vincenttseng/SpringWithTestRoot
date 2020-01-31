@@ -1,0 +1,3 @@
+mvn -Dmaven.test.skip=true clean compile package verify
+
+mvn clean compile package verify
