@@ -192,22 +192,6 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.5.6</version>
 		</dependency>
-		<!-- http://repo.insynerger.com/artifactory/ -->
-		<dependency>
-			<groupId>com.insnergy</groupId>
-			<artifactId>insnergy-core-ccs</artifactId>
-			<version>${insnergy-core-ccs.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.insnergy</groupId>
-			<artifactId>insnergy-db-ems-api</artifactId>
-			<version>${insnergy-db-ems-api.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.insynerger</groupId>
-			<artifactId>data-definition-api</artifactId>
-			<version>${data-definition-api.version}</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
